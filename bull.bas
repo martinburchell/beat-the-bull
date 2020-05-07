@@ -1,0 +1,12 @@
+   10 REM BEAT THE BULL LOADER PROGRAM
+   20 REM (C) Burchellsoft 1986
+   30 MODE7
+   40 VDU23;8202;0;0;0;
+   50 FORP%=1TO2:PRINTTAB(7,P%);CHR$141;"ÅBurchellsoft Beat the Bull":NEXT
+   60 PRINTTAB(1,8);"àLoading Character set":PROCWINDOW:*L.C.BULL
+   70 VDU26
+   80 PRINTTAB(1,8);" Character set Loaded "
+   90 PRINTTAB(1,10);"àLoading Main Program":PROCWINDOW:CHAIN"BULL2"
+  100 DEFPROCWINDOW
+  110 VDU28,0,22,39,20
+  120 ENDPROC
